@@ -17,3 +17,5 @@ WebCollector
 适用性：WebCollector适用于精抽取业务。
 
 上手难易度：简单
+ 
+感觉自己找了个好框架 勿喷哈哈，框架学习地址：http://blog.csdn.net/ajaxhu/article/details/38406687
