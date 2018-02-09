@@ -33,7 +33,8 @@ public class Test {
 	*/
 		
 		try {
-			Document doc = (Document) Jsoup.connect("https://image.baidu.com/search/index?tn=baiduimage&ct=201326592&lm=-1&cl=2&ie=gbk&word=%D1%EE%C3%DD&fr=ala&ala=1&alatpl=star&pos=0&hs=2&xthttps=111111").post();
+			String url ="http://image.baidu.com/search/index?tn=baiduimage&ps=1&ct=201326592&lm=-1&cl=2&nc=1&ie=utf-8&word=js%20is%20not%20funcation";
+			Document doc = (Document) Jsoup.connect(url).get();
 			
 			//得到html的所有东西
 			Element content = doc.getElementById("content");
@@ -47,7 +48,7 @@ public class Test {
 			System.out.println(linkText);
 			}
 			 */
-			 System.out.println(content);
+			 System.out.println(doc);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
