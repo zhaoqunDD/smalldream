@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:cache="http://www.springframework.org/schema/cache"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/cache http://www.springframework.org/schema/cache/spring-cache-4.3.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd
+		http://www.springframework.org/schema/tx/ http://www.springframework.org/schema/tx/spring-tx-4.3.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	
+	
+	<!-- 将多个配置文件读取到容器中，交给Spring管理 -->    
+	<bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">    
+	    <property name="locations">    
+	       <list>    
+	          <!-- 这里支持多种寻址方式：classpath和file -->    
+	          <value>classpath:jdbc.properties</value>    
+	          <!-- 推荐使用file的方式引入，这样可以将配置和代码分离 -->    
+	          <!--  <value>classpath:netty.properties</value>    -->
+	          <!-- <value>file:/opt/demo/config/demo-remote.properties</value>  -->   
+	        </list>    
+	    </property>    
+	</bean>    
+	
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+		<property name="driverClassName" value="${dbcp.driverClassName}" />
+		<property name="url" value="${dbcp.driver}" />
+		<property name="username" value="${dbcp.userName}" />
+		<property name="password" value="${dbcp.password}" />
+		<!--连接池启动时的初始值-->
+		<property name="initialSize" value="${dbcp.initialSize}" />
+		<!--连接池最大值-->
+		<property name="maxActive" value="${dbcp.maxActive}" />
+		<!--最大空闲值-->
+		<property name="maxIdle" value="${dbcp.maxIdle}" />
+		<!--最小空闲值-->
+		<property name="minIdle" value="${dbcp.minIdle}" />
+		<!--最大等待时间 -->
+		<property name="maxWait" value="${dbcp.maxWait}"></property>
+		<!-- 校验查询语句 -->
+		<property name="validationQuery" value="${dbcp.validationQuery}"></property>
+		<!-- 开启连接空闲时检查 -->
+		<property name="testWhileIdle" value="${dbcp.testWhileIdle}"></property>
+		<!-- 检查空闲连接的时间 -->
+		<property name="timeBetweenEvictionRunsMillis" value="${dbcp.timeBetweenEvictionRunsMillis}"></property>
+		<!-- 断开连接空闲超过该参数的时间 -->
+		<property name="minEvictableIdleTimeMillis" value="${dbcp.minEvictableIdleTimeMillis}"></property>
+		<!-- 一次检查多少空闲连接 -->
+		<property name="numTestsPerEvictionRun" value="${dbcp.numTestsPerEvictionRun}"></property>
+		<!-- 取连接时检查(未开启) -->
+		<property name="testOnBorrow" value="${dbcp.testOnBorrow}"></property>
+		<!-- 回收废弃的活动连接 -->
+		<property name="removeAbandoned" value="${dbcp.removeAbandoned}"></property>
+		<!-- 当活动连接超过多少秒不使用 -->
+		<property name="removeAbandonedTimeout" value="${dbcp.removeAbandonedTimeout}"></property>
+	</bean>
+	<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+	<bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+<!-- 	<tx:annotation-driven transaction-manager="transactionManager"/> -->
+	
+</beans>
