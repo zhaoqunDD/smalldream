@@ -25,6 +25,7 @@
 	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre1.8.0_65">
@@ -32,5 +33,34 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="src/main/resources/webcontrollerJar/avro-1.8.2.jar"/>
+	<classpathentry kind="lib" path="src/main/resources/webcontrollerJar/c3p0-0.9.5.2.jar"/>
+	<classpathentry kind="lib" path="src/main/resources/webcontrollerJar/commons-compress-1.8.1.jar"/>
+	<classpathentry kind="lib" path="src/main/resources/webcontrollerJar/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="src/main/resources/webcontrollerJar/gson-2.8.1.jar"/>
+	<classpathentry kind="lib" path="src/main/resources/webcontrollerJar/hamcrest-core-1.3.jar"/>
+	<classpathentry kind="lib" path="src/main/resources/webcontrollerJar/jackson-core-asl-1.9.13.jar"/>
+	<classpathentry kind="lib" path="src/main/resources/webcontrollerJar/jackson-mapper-asl-1.9.13.jar"/>
+	<classpathentry kind="lib" path="src/main/resources/webcontrollerJar/je-5.0.73.jar"/>
+	<classpathentry kind="lib" path="src/main/resources/webcontrollerJar/jsoup-1.10.3.jar"/>
+	<classpathentry kind="lib" path="src/main/resources/webcontrollerJar/junit-4.11.jar"/>
+	<classpathentry kind="lib" path="src/main/resources/webcontrollerJar/juniversalchardet-1.0.3.jar"/>
+	<classpathentry kind="lib" path="src/main/resources/webcontrollerJar/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="src/main/resources/webcontrollerJar/mchange-commons-java-0.2.11.jar"/>
+	<classpathentry kind="lib" path="src/main/resources/webcontrollerJar/mysql-connector-java-5.1.43.jar"/>
+	<classpathentry kind="lib" path="src/main/resources/webcontrollerJar/okhttp-3.8.1.jar"/>
+	<classpathentry kind="lib" path="src/main/resources/webcontrollerJar/okio-1.13.0.jar"/>
+	<classpathentry kind="lib" path="src/main/resources/webcontrollerJar/paranamer-2.7.jar"/>
+	<classpathentry kind="lib" path="src/main/resources/webcontrollerJar/slf4j-api-1.7.25.jar"/>
+	<classpathentry kind="lib" path="src/main/resources/webcontrollerJar/slf4j-log4j12-1.7.25.jar"/>
+	<classpathentry kind="lib" path="src/main/resources/webcontrollerJar/snappy-java-1.1.1.3.jar"/>
+	<classpathentry kind="lib" path="src/main/resources/webcontrollerJar/spring-beans-4.3.10.RELEASE.jar"/>
+	<classpathentry kind="lib" path="src/main/resources/webcontrollerJar/spring-core-4.3.10.RELEASE.jar"/>
+	<classpathentry kind="lib" path="src/main/resources/webcontrollerJar/spring-jdbc-4.3.10.RELEASE.jar"/>
+	<classpathentry kind="lib" path="src/main/resources/webcontrollerJar/spring-tx-4.3.10.RELEASE.jar"/>
+	<classpathentry kind="lib" path="src/main/resources/webcontrollerJar/WebCollector-2.71-javadoc.jar"/>
+	<classpathentry kind="lib" path="src/main/resources/webcontrollerJar/WebCollector-2.71-sources.jar"/>
+	<classpathentry kind="lib" path="src/main/resources/webcontrollerJar/WebCollector-2.71.jar"/>
+	<classpathentry kind="lib" path="src/main/resources/webcontrollerJar/xz-1.5.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
