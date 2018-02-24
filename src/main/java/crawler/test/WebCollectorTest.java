@@ -26,10 +26,10 @@ public class WebCollectorTest extends BreadthCrawler{
 	}
 
 	public void visit(Page page, CrawlDatums arg1) {
-		String url = page.getUrl();
+		String url = page.url();
 	    if (page.matchUrl("http://news.hfut.edu.cn/show-.*html")) {
 	        /*we use jsoup to parse page*/
-	        Document doc = page.getDoc();
+	        Document doc = page.doc();
 
 	        /*extract title and content of news by css selector*/
 	        String title = page.select("div[id=Article]>h2").first().text();

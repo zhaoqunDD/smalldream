@@ -45,13 +45,13 @@
 		    <version>1.11.2</version>
 		</dependency>
 		
-		<!-- webcollector jar下载不全 ，改成本地导包    -->
+		<!-- webcollector jar下载不全 ，改成本地导包   
 		<dependency>
 		    <groupId>cn.edu.hfut.dmic.webcollector</groupId>
 		    <artifactId>WebCollector</artifactId>
 		    <version>2.52</version>
 		</dependency>
-		
+		 -->
 		
 		<dependency>
 			<groupId>cglib</groupId>
@@ -161,7 +161,7 @@
 
 		
 
-		<!-- Logging -->
+		<!-- Logging 
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
@@ -203,7 +203,7 @@
 			</exclusions>
 			<scope>runtime</scope>
 		</dependency>
-
+-->
 		<!-- @Inject -->
 		<dependency>
 			<groupId>javax.inject</groupId>
@@ -258,6 +258,5 @@
   
   <properties>
   	<org.springframework-version>4.3.3.RELEASE</org.springframework-version>
-  	<org.slf4j-version>1.6.6</org.slf4j-version>
   </properties>
 </project>
