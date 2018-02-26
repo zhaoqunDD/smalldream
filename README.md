@@ -1,16 +1,18 @@
 # smalldream
 ##20180208
+
 项目目的：爬虫+大数据+报表 在页面展示网络不为人知的秘密
 
 例如 ：爬社交网络用户数据、将数据通过大数据过滤，利用echarts报表展示出来
  
  
 ##20180209 
+
 jsoup爬虫测试
 
 ##20180209
+
 WebCollector进行爬虫
- 
 WebCollector
 官方网站：https://github.com/CrawlScript/WebCollector
 
