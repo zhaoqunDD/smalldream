@@ -5,11 +5,11 @@
 例如 ：爬社交网络用户数据、将数据通过大数据过滤，利用echarts报表展示出来
  
  
-##20180209
-利用 jsoup爬虫测试
+##20180209 
+jsoup爬虫测试
 
 ##20180209
- 试试WebCollector进行爬虫
+WebCollector进行爬虫
  
 WebCollector
 官方网站：https://github.com/CrawlScript/WebCollector
