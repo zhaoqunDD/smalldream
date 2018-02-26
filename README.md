@@ -12,8 +12,9 @@ jsoup爬虫测试
 
 ##20180209
 
-WebCollector进行爬虫
-WebCollector
+WebCollector爬虫测试
+
+
 官方网站：https://github.com/CrawlScript/WebCollector
 
 是否支持分布式：该框架同时包含了单机版和分布式版两个版本；单机版和Hadoop版
