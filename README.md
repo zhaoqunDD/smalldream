@@ -31,6 +31,7 @@ WebCollector爬虫测试 -test.WebCollectorTest
 爬取微博数据失败
 
 爬去百度图片失败
+
 ##20180228
 
 将http://www.7k7k.com页面上的所有图片下载到本地demo完成-crawler.webcollector.go7k7k.Fetch7k7k.java 
