@@ -20,18 +20,18 @@ public class WebCollectorTest extends BreadthCrawler{
 		this.addSeed("http://news.hfut.edu.cn/list-1-1.html");
 
 		//限定爬去范围
-	    this.addRegex("http://news.hfut.edu.cn/show-.*html");
-	    this.addRegex("-.*\\.(jpg|png|gif).*");
-	    this.addRegex("-.*#.*");
+	   this.addRegex("http://news.hfut.edu.cn/show-.*html");
+	    //this.addRegex("-.*\\.(jpg|png|gif).*");
+	   // this.addRegex("-.*#.*");
 	}
 
 	public void visit(Page page, CrawlDatums arg1) {
 		String url = page.url();
+		
+		System.out.println("-------------");
 	    if (page.matchUrl("http://news.hfut.edu.cn/show-.*html")) {
-	        /*we use jsoup to parse page*/
 	        Document doc = page.doc();
 
-	        /*extract title and content of news by css selector*/
 	        String title = page.select("div[id=Article]>h2").first().text();
 	        String content = page.select("div#artibody", 0).text();
 
@@ -40,6 +40,7 @@ public class WebCollectorTest extends BreadthCrawler{
 	        System.out.println("content:\n" + content);
 		
 	}
+	
 	}
 	
 	public static void main(String[] args) throws Exception {
