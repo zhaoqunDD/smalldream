@@ -8,11 +8,11 @@
  
 ##20180209 
 
-jsoup爬虫测试
+jsoup爬虫测试 -test.JsoupTest
 
 ##20180209
 
-WebCollector爬虫测试
+WebCollector爬虫测试 -test.WebCollectorTest
 
 
 官方网站：https://github.com/CrawlScript/WebCollector
@@ -26,7 +26,12 @@ WebCollector爬虫测试
  
 找了个好框架 勿喷哈哈，框架学习地址：http://blog.csdn.net/ajaxhu/article/details/38406687
 
+##20180227
+ 
+爬取微博数据失败
+
+爬去百度图片失败
 ##20180228
 
-将http://www.7k7k.com页面上的所有图片下载到本地demo完成：可查看 Fetch7k7k.java 
+将http://www.7k7k.com页面上的所有图片下载到本地demo完成-crawler.webcollector.go7k7k.Fetch7k7k.java 
  
