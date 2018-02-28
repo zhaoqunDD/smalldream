@@ -23,7 +23,8 @@ WebCollector爬虫测试 -test.WebCollectorTest
 爬取微博数据失败；爬取百度图片失败；模拟登录；页面逻辑多层 ；问题挂起；找简单页面爬取熟悉框架-test.WebControllerTestTwo
  
  
-##20180228
+ 
+ ##20180228
 
 将http://www.7k7k.com页面上的所有图片下载到本地demo完成 -crawler.webcollector.go7k7k.Fetch7k7k.java 
  
