@@ -25,3 +25,7 @@ WebCollector爬虫测试
 上手难易度：简单
  
 找了个好框架 勿喷哈哈，框架学习地址：http://blog.csdn.net/ajaxhu/article/details/38406687
+
+##20180228
+将http://www.7k7k.com页面上的所有图片下载到本地完成：查看 Fetch7k7k.java 
+ 
