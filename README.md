@@ -14,17 +14,9 @@ jsoup爬虫测试 -test.JsoupTest
 
 WebCollector爬虫测试 -test.WebCollectorTest
 
-
 官方网站：https://github.com/CrawlScript/WebCollector
 
-是否支持分布式：该框架同时包含了单机版和分布式版两个版本；单机版和Hadoop版
-可扩展性：强
-
-适用性：WebCollector适用于精抽取业务。
-
-上手难易度：简单
- 
-找了个好框架 勿喷哈哈，框架学习地址：http://blog.csdn.net/ajaxhu/article/details/38406687
+框架学习地址：http://blog.csdn.net/ajaxhu/article/details/38406687
 
 ##20180227
  
