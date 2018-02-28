@@ -28,5 +28,5 @@ WebCollector爬虫测试
 
 ##20180228
 
-将http://www.7k7k.com页面上的所有图片下载到本地完成：可查看 Fetch7k7k.java 
+将http://www.7k7k.com页面上的所有图片下载到本地demo完成：可查看 Fetch7k7k.java 
  
